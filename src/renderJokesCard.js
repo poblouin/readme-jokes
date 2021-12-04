@@ -8,22 +8,22 @@ const qnaCard = (qColor, aColor, bg, borderColor, codeColor, question, answer, h
     border = '2px solid transparent';
   }
   const card = `
-  <svg width="500" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="500" height="75" fill="none" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="${width}" height="${height}">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <style>
           * {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
           }
           .container{
             width: 500px;
-            height: 100px;
+            height: 75px;
             border: ${border};
             border-radius: 10px;
+            box-sizing: border-box;
             background-color: #${bg};
             display: flex;
+            align-items: center
           }
           .text{
             padding: 0.5rem;
@@ -31,6 +31,7 @@ const qnaCard = (qColor, aColor, bg, borderColor, codeColor, question, answer, h
           }
           .question {
             color: ${qColor};
+            margin-bottom: 4px;
           }
           .answer {
             color: ${aColor};
@@ -53,28 +54,28 @@ const qnaCard = (qColor, aColor, bg, borderColor, codeColor, question, answer, h
 };
 
 // Quotation type card
-const quoteCard = (textColor, bg, borderColor, codeColor, qoute, hideBorder) => {
+const quoteCard = (textColor, bg, borderColor, codeColor, quote, hideBorder) => {
   let border = `2px solid ${borderColor}`;
   if (hideBorder !== undefined) {
     border = '2px solid transparent';
   }
   const card = `
-  <svg width="500" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="500" height="75" fill="none" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="${width}" height="${height}">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <style>
           * {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
           }
           .container{
             width: 500px;
-            height: 100px;
+            height: 75px;
             border: ${border};
             border-radius: 10px;
+            box-sizing: border-box;
             background-color: #${bg};
             display: flex;
+            align-items: center
           }
           .text{
             padding: 0.5rem;
@@ -90,7 +91,7 @@ const quoteCard = (textColor, bg, borderColor, codeColor, qoute, hideBorder) => 
         </style>
         <div class="container">
           <div class="text">
-            <p class="quote">${qoute}</p>
+            <p class="quote">${quote}</p>
           </div>
         </div>
       </div>
