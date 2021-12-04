@@ -265,6 +265,7 @@ _URL eg: https://readme-jokes.vercel.app/api?bgColor=%23073b4c&textColor=%2306d6
 
 - Fork this repository.
 - Deploy on your own [Vercel](https://vercel.com/) instance.
+  - You can use `npm run start:dev` to run an instance on your localhost.
 - See [issues](https://github.com/ABSphreak/readme-jokes/issues) that need help.
 - Open a [PR](https://github.com/ABSphreak/readme-jokes/pulls), if you solve something.
 - Got some idea? Just open an [issue](https://github.com/ABSphreak/readme-jokes/issues/new).
