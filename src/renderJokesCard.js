@@ -8,14 +8,22 @@ const qnaCard = (qColor, aColor, bg, borderColor, codeColor, question, answer, h
     border = '2px solid transparent';
   }
   const card = `
-  <svg width="500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="500" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="${width}" height="${height}">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <style>
-          .container {
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          .container{
+            width: 500px;
+            height: 100px;
             border: ${border};
             border-radius: 10px;
-            background: ${bg};
+            background-color: #${bg};
+            display: flex;
           }
           .text{
             padding: 0.5rem;
@@ -51,14 +59,22 @@ const quoteCard = (textColor, bg, borderColor, codeColor, qoute, hideBorder) => 
     border = '2px solid transparent';
   }
   const card = `
-  <svg width="500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width="500" height="100" fill="none" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="${width}" height="${height}">
       <div xmlns="http://www.w3.org/1999/xhtml">
         <style>
-          .container {
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          .container{
+            width: 500px;
+            height: 100px;
             border: ${border};
             border-radius: 10px;
-            background: ${bg};
+            background-color: #${bg};
+            display: flex;
           }
           .text{
             padding: 0.5rem;
